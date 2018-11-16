@@ -1,0 +1,434 @@
+/* CSS Document */
+html, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+body { 
+	margin: 0px 0px 0px 0px;
+	background-color:#FFFFFF;
+	min-width:320px;
+	}
+/* CSS Reset Finished */
+
+/* TEXT LINKS HEADING STYLES */
+
+a:link {
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:visited {
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:hover {
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: underline;
+	color: #000000;
+}
+a:active {
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.copyrlink a:link {
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.copyrlink a:visited {
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.copyrlink a:hover {
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	text-decoration: underline;
+	color: #000000;
+}
+.copyrlink a:active {
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+.readmorelink a:link {
+	color: #FF0000;
+	text-decoration: none;
+}
+.readmorelink a:visited {
+	text-decoration: none;
+	color: #FF0000;
+}
+.readmorelink a:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+.readmorelink a:active {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: #716f6e;
+	text-align:justify;
+	line-height:120%;
+	padding:10px;
+	}
+	
+p.copyrp {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align:justify;
+	padding:0px;
+	}
+	
+.redtext {
+	color:#FF0000;
+	}
+
+/* style for form button */
+.formbutton1 {
+	border: 1px solid #716f6e;
+    color: #716f6e;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	background-color:#FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+}
+
+/* style for navigation buttons in mobile mode */
+.button1 {
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 26px;
+	width: 100%;
+	padding: 10px;
+	background-color:#ff0000;
+	color:#FFFFFF;
+}
+
+/* style for navigation buttons in mobile mode when mouse hovers */
+.button1:hover {
+	background-color: #FFFFFF;
+	color:#ff0000;
+	}
+
+/* style for adding space and text size navigation links */
+.navi_space {
+	padding-right:30px;
+    font-size: 20px;
+	}
+	
+.navi_space2 {
+	font-size: 20px;
+	}
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 45px;
+	color: #FFFFFF;
+	}
+
+/* MAIN PAGE STRUCTURE */
+
+/* when in menu clicked in mobile mode displays this navigation box */
+#menubox {
+	width:100%;
+	height:100%;
+	position:fixed;
+	overflow: auto;
+	top:0px;
+	left:0px;
+	z-index:2072;
+	vertical-align:middle;
+	background-color:#ff0000;
+	visibility:hidden;
+	text-align:center;
+	padding-top:10px;
+	}
+
+/* main content box for logo and log in bottons */
+#logo_container {
+	top:0px;
+	width:90%;
+	position:relative;
+	min-height:138px;
+	margin: 0 auto;
+	}
+	
+/* left box contains logo */
+#logo_left {
+	width: 30%;
+	height:auto;
+	position:relative;
+	float:left;
+	background-color:#ffffff;
+	text-align:left;
+	padding-left:10px;
+	}
+
+/* right box contains log in buttons */
+#login_right {
+	width: 65%;
+	height:auto;
+	position:relative;
+	float:right;
+	background-color:#ffffff;
+	text-align:right;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:10px;
+	padding-top:50px;
+	}
+
+/* main navigation in full size mode */
+
+#navi_container {
+	width: 100%;
+	min-height:36px;
+	background-color:#FF0000;
+}
+
+/* inner container for navigation in full size mode */
+#navi_g_inner {
+	width: 90%;
+	height:auto;
+	margin: 0 auto;
+	position:relative;
+	text-align:left;
+	padding-bottom:0px;
+	padding-left:10px;
+	padding-right:0px;
+	padding-top:5px;
+	}
+
+/* inner contain for main navigation in small screen size mode <650px */
+
+#navi_g_inner2 {
+	width: 90%;
+	height:auto;
+	display:none;
+	margin: 0 auto;
+	position:relative;
+	text-align:left;
+	padding-bottom:0px;
+	padding-left:20px;
+	padding-right:0px;
+	padding-top:5px;
+	}
+
+/* main image container top of page */
+#main_image_container {
+	width: 100%;
+	height:auto;
+	position:relative;
+	padding-bottom:5px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:0px;
+}
+
+/* H1 title holder top of page */
+#title_container {
+	width:100%;
+	height:auto;
+	position:relative;
+	background-color:#FF0000;
+	}
+	
+/* H1 title holder inner allows to be centralised */
+.title_containerinner {
+	width: 90%;
+	height:auto;
+	margin: 0 auto;
+	position:relative;
+	text-align:left;
+	padding-bottom:4px;
+	padding-left:10px;
+	padding-right:0px;
+	padding-top:6px;
+	}	
+
+/* main text container 
+#main_content_container {
+	width:100%;
+	height:auto;
+	position:relative;
+	margin-top:20px;
+	}
+	
+ */
+ 
+/* main text container allows to be centralised */
+#m_content_c_inner {
+	width: 90%;
+	height:auto;
+	margin: 0 auto;
+	position:relative;
+	text-align:left;
+	padding-bottom:4px;
+	padding-left:10px;
+	padding-right:0px;
+	padding-top:6px;
+	}
+
+/* adds padding to the images on right */
+.hpboximg {
+	padding:10px;
+	}
+
+/* container that holds images on right */
+.boximg_right {
+	width:440px;
+	min-height:350px;
+	position:relative;
+	float:right;
+	margin-left:20px;
+	text-align:center;
+	}
+	
+/* footer container bottom of page */
+#bottom_footer {
+	width:100%;
+	min-height:40px;
+	position:relative;
+	background-color:#FF0000;	
+	}
+
+/* inner container for footer bottom of page */
+#bf_inner {
+	width: 90%;
+	height:auto;
+	margin: 0 auto;
+	position:relative;
+	text-align:left;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:15px;
+	}
+
+/* box to hold projects on browse projects page */	
+.projectholder {
+	width:100%;
+	height:auto;
+	position:relative;
+	text-align:left;
+	border-bottom: 2px dashed #cccccc;
+	display:inline-block;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-bottom:10px;
+	}
+
+@media screen and (max-width: 990px) {
+/* anything in here will only be applied when the screen is smaller than 990px */ 
+
+.boximg_right {
+	width:100%;
+	height:auto;
+	position:relative;
+	float:none;
+	margin-left:0px;
+	text-align:center;
+	}
+
+
+.hpboximg {
+	padding:10px;
+	width:85%;
+	height:auto;
+	}
+
+}
+
+@media screen and (max-width: 650px) {
+/* anything in here will only be applied when the screen is smaller than 650px */ 
+
+/* inner container for navigation in full size mode hides navi_g_inner */
+#navi_g_inner {
+	display:none;
+	}
+
+/* inner container for navigation in small size mode displays navi_g_inner2 */
+#navi_g_inner2 {
+	display: block;
+	}
+	
+	
+/* left box contains logo */
+#logo_left {
+	width: 90%;
+	height:auto;
+	position:relative;
+	float:none;
+	background-color:#ffffff;
+	text-align:left;
+	padding-left:10px;
+	}
+
+/* right box contains log in buttons */
+#login_right {
+	width: 90%;
+	height:auto;
+	position:relative;
+	float:none;
+	background-color:#ffffff;
+	text-align:left;
+	padding-bottom:20px;
+	padding-left:10px;
+	padding-right:0px;
+	padding-top:0px;
+	}
+	
+.hpboximg {
+	padding:20px;
+	width:95%;
+	height:auto;
+	}
+	
+}
+
+
+@media screen and (max-width: 470px) {
+/* anything in here will only be applied when the screen is smaller than 470px */ 
+
+
+p {
+	font-size: 16px;
+	}
+
+.hpboximg {
+	padding:10px;
+	width:90%;
+	height:auto;
+	}
+
+}
